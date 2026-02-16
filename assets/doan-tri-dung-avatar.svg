@@ -1,0 +1,24 @@
+<svg width="640" height="780" viewBox="0 0 640 780" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="72" y1="40" x2="610" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF9EA"/>
+      <stop offset="1" stop-color="#FFE6CF"/>
+    </linearGradient>
+    <linearGradient id="frameGradient" x1="16" y1="16" x2="624" y2="764" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3C55B"/>
+      <stop offset="1" stop-color="#CB3A4B"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="8" y="8" width="624" height="764" rx="24" fill="url(#bgGradient)" stroke="url(#frameGradient)" stroke-width="16"/>
+
+  <circle cx="320" cy="274" r="124" fill="#E4CBB3"/>
+  <path d="M150 592C150 488.171 234.171 404 338 404H302C405.829 404 490 488.171 490 592V642H150V592Z" fill="#D7C1AE"/>
+
+  <path d="M320 156C258.801 156 209 205.801 209 267C209 328.199 258.801 378 320 378C381.199 378 431 328.199 431 267C431 205.801 381.199 156 320 156ZM320 364C266.521 364 223 320.479 223 267C223 213.521 266.521 170 320 170C373.479 170 417 213.521 417 267C417 320.479 373.479 364 320 364Z" fill="#B99779" fill-opacity="0.7"/>
+
+  <path d="M214 260C219.333 197.333 255.333 164.5 322 161.5C388.667 158.5 424.333 191 429 259.5C422.659 240.303 411.088 226.294 394.286 217.471C377.483 208.647 356.721 204.236 332 204.236C307.279 204.236 285.85 208.982 267.714 218.471C249.579 227.96 237.008 241.803 230 260H214Z" fill="#2D2A2A"/>
+
+  <rect x="80" y="664" width="480" height="72" rx="36" fill="#8D1423"/>
+  <text x="320" y="710" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#FFE8B6">Doan Tri Dung</text>
+</svg>
