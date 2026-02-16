@@ -4,6 +4,35 @@
     footerYear.textContent = String(new Date().getFullYear());
   }
 
+  const quoteElement = document.getElementById("wishQuote");
+  const newWishButton = document.getElementById("newWishButton");
+
+  if (quoteElement && newWishButton) {
+    const wishMessages = [
+      "\"Chuc anh nam moi ngap tran tieng cuoi, may man va suc khoe.\"",
+      "\"Chuc anh va gia dinh don Tet am ap, doan vien va hanh phuc.\"",
+      "\"Nam moi binh an, tai loc day nha, van su hanh thong anh nhe.\"",
+      "\"Mong anh luon vui ve, lac quan va gap nhieu dieu tot dep.\"",
+      "\"Chuc anh mot nam moi ruc ro, moi ngay deu la mot ngay vui.\"",
+    ];
+    let previousWishIndex = 0;
+
+    newWishButton.addEventListener("click", () => {
+      if (wishMessages.length === 1) {
+        quoteElement.textContent = wishMessages[0];
+        return;
+      }
+
+      let nextWishIndex = previousWishIndex;
+      while (nextWishIndex === previousWishIndex) {
+        nextWishIndex = Math.floor(Math.random() * wishMessages.length);
+      }
+
+      previousWishIndex = nextWishIndex;
+      quoteElement.textContent = wishMessages[nextWishIndex];
+    });
+  }
+
   const canvasElement = document.getElementById("fireworksCanvas");
   const heroSection = document.querySelector(".hero");
   const reduceMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
